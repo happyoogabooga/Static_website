@@ -6,7 +6,6 @@ body{
 }
 nav {
     background-color: darkgray;
-    width: 100%;
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -35,17 +34,92 @@ nav li {
 .Character:hover{
 }
 .Character img{
-    display:inline-flex;
-    height:300px;
-    flex:1;
+    width:200px;
     padding: 20px;
+    border-radius:25px;
 }
 .container{
     width: 100%;
     display:flex;
-    gap:1px;
+    gap:5px;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
+.cell {
+    width: 320px;
+    min-width: 280px;
+    box-sizing: border-box;
+    border-radius:25px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    background-color: lightgrey;
+    padding-bottom: 10px;
+}
+
+.Charactername{
+    display: inline-block;
+    padding:6px 12px;
+    background-color:darkgrey;
+    border-radius: 15px;
+    margin-top: 8px;
+}
+
+.CharacterDetails{
+    align-items:flex-end;
+    border-radius:25px;
+    width:90%;
+    text-align:center;
+    background-color:darkgrey;
+}
+.Container-Details{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:24px;
+    align-items:flex-start;
+}
+
+.Left-Details-Column{
+    flex: 0 0 320px;
+    padding-top: 0;
+}
+
+.Right-Details-Column{
+    flex: 1 1 400px;
+    padding: 0 50px 0;
+    margin-top: 0;
+}
+
+
+.Detail-Img{
+    height:100%;
+    width:90%;
+    max-width:320px;
+    border-radius:25px;
+}
+.Details-Img-Container{
+    height: 300px;
+    margin-bottom:10%;
+    width:100%;
+    max-width:320px;
+    display:flex;
+}
+.Details-Card{
+    background-color:lightgray;
+    border-radius:25px;
+    padding:15px;
+    width:100%;
+    max-width:320px;
+    box-sizing:border-box;
+    overflow-wrap:anywhere;
+}
+.Outside-Container-Details{
+    padding-top:2%;
+    padding-left:2%;
+    padding-right:2%;
+}
 footer {
     text-align:center;
     background-color:lightgrey;
