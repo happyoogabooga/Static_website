@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "StyleSheet" href = "style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li> <a href = "index.html">HOME</a>
+                <li> <a href = "about.html">About</a>
+                <li> <a href = "details.html">Details</a>
+                <li> <a href = "new-character-form.html">Add a Character</a>
+            </ul>
+        </nav>
+        <div class = "new-character-form-container">
+            <div class = "new-character-form-top">
+                <h1>Add a New Character</h1>
+                <p>Expand our love for Destiny!</p>
+                <hr>
+            </div>
+            <div class = "new-character-form-bottom">
+                <h3>Character Information</h3>
+                <form id = "CharacterForm">
+                    <div class = "CharacterForm-Fields">
+                        <label for = "CharacterName" class = "Form-Label">
+                            <strong>Character Name</strong>
+                        </label>
+                        <input type = "text" id = "CharacterName" name = "name" placeholder = "e.g., Ikora rey" required class = "form-control">
+                        <small>The name of your character</small>
+                    </div>
+                    <div class = "CharacterForm-Fields">
+                        <label for = "Destination" class = "Form-Label">
+                            <strong>Destination</strong>
+                        </label>
+                        <input type = "text" id = "Destination" name = "Destionation" placeholder = "e.g., Earth, Titan, IO" required class = "form-control">
+                        <small>Where your character is from</small>
+                    </div>
+                    <div class = "CharacterForm-Fields">
+                        <label for = "Sub-Class" class = "Form-Label">
+                            <strong>Sub Class</strong>
+                        </label>
+                        <input type = "text" id = "Sub-Class" name = "Sub-Class" placeholder = "e.g., arc, void, solar" required class = "form-control">
+                        <small>What sub class does your character have?</small>
+                    </div>
+                    <div class = "CharacterForm-Fields">
+                        <label for = "Image-URL" class = "Form-Label">
+                            <strong>Image URL</strong>
+                        </label>
+                        <input type = "text" id = "Image-URL" name = "Image-URL" placeholder = "https://example.com/sloane.jpg" required class = "form-control">
+                    </div>
+                    <div class = "CharacterForm-Fields">
+                        <strong>Race of your character</strong>
+                        <br>
+                        <input type="radio" id="Awoken" name="Race" value="Awoken">
+                        <label for="Awoken">Awoken</label>
+                        <input type="radio" id="Exo" name="Race" value="Exo">
+                        <label for="Exo">Exo</label>
+                        <input type="radio" id="Human" name="Race" value="Human">
+                        <label for="Human">Human</label>
+                        <input type="radio" id="Cabal" name="Race" value="Cabal">
+                        <label for="Cabal">Cabal</label>
+                        <input type="radio" id="Fallen" name="Race" value="Fallen">
+                        <label for="Fallen">Fallen</label>
+                        <input type="radio" id="Vex" name="Race" value="Vex">
+                        <label for="Vex">Vex</label>
+                    </div>
+                    <div class = "CharacterForm-Fields">
+                        <label for = "shortDescription" class = "Form-Label">
+                            <strong>Short-Description</strong>
+                        </label>
+                        <textarea id = "shortDescription" name = "shortDescription" placeholder = "describe your character in 1-2 sentences" rows = "3" required class = "form-control"></textarea>
+                        <small>A brief summary of your character (50-100 words)?</small>
+                    </div>
+                    <div>
+                        <button type = "submit" class = "submit-btn">Add Character</button>
+                        <a href="index.html" class = "btn">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
